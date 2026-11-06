@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CoreTech | Catálogo de Productos</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado: logo, menu, buscador y carrito -->
+    <header>
+        <div class="contenedor">
+            <a href="index.html" class="logo">
+                <span class="logo-cuadro"></span>
+                CoreTech
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>
+                        <a href="catalogo.html" class="activo">Componentes</a>
+                        <ul>
+                            <li><a href="catalogo.html">Procesadores</a></li>
+                            <li><a href="catalogo.html">Tarjetas madre</a></li>
+                            <li><a href="catalogo.html">Memoria RAM</a></li>
+                            <li><a href="catalogo.html">Tarjetas gráficas</a></li>
+                            <li><a href="catalogo.html">Fuentes de poder</a></li>
+                            <li><a href="catalogo.html">Gabinetes</a></li>
+                            <li><a href="catalogo.html">Almacenamiento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="catalogo.html">Periféricos</a></li>
+                    <li><a href="catalogo.html">PCs armadas</a></li>
+                    <li><a href="catalogo.html">Ofertas</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-acciones">
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar componentes o periféricos...">
+                </div>
+                <a href="#" class="enlace-cuenta">Mi cuenta</a>
+                <a href="#" class="boton-carrito">Carrito (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="contenedor">
+            <div class="catalogo">
+
+                <!-- Barra lateral de filtros -->
+                <aside class="filtros">
+                    <div class="encabezado-filtros">
+                        <h2>Filtros</h2>
+                        <a href="catalogo.html" class="limpiar-filtros">Limpiar todos</a>
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <h3>Categorías</h3>
+                        <ul>
+                            <li><label><input type="checkbox"> Procesadores</label></li>
+                            <li><label><input type="checkbox"> Tarjetas madre</label></li>
+                            <li><label><input type="checkbox"> Memoria RAM</label></li>
+                            <li><label><input type="checkbox"> Tarjetas gráficas</label></li>
+                            <li><label><input type="checkbox"> Fuentes de poder</label></li>
+                            <li><label><input type="checkbox"> Gabinetes</label></li>
+                            <li><label><input type="checkbox"> Almacenamiento</label></li>
+                            <li><label><input type="checkbox"> Periféricos</label></li>
+                            <li><label><input type="checkbox"> Audífonos</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <h3>Rango de precio</h3>
+                        <ul>
+                            <li><label><input type="checkbox"> $0 - $1,000</label></li>
+                            <li><label><input type="checkbox"> $1,000 - $3,000</label></li>
+                            <li><label><input type="checkbox"> $3,000 - $5,000</label></li>
+                            <li><label><input type="checkbox"> $5,000 o más</label></li>
+                        </ul>
+                    </div>
+
+                    <div class="grupo-filtro">
+                        <h3>Marcas</h3>
+                        <ul>
+                            <li><label><input type="checkbox"> Intel</label></li>
+                            <li><label><input type="checkbox"> AMD</label></li>
+                            <li><label><input type="checkbox"> Corsair</label></li>
+                            <li><label><input type="checkbox"> Logitech</label></li>
+                            <li><label><input type="checkbox"> HyperX</label></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Zona de productos -->
+                <section class="zona-productos">
+                    <div class="encabezado-catalogo">
+                        <div>
+                            <h1>Todos los productos</h1>
+                            <p>Mostrando 12 resultados para componentes y periféricos</p>
+                        </div>
+                        <div class="orden">
+                            <label for="orden">Ordenar por:</label>
+                            <select id="orden">
+                                <option>Relevancia</option>
+                                <option>Precio: menor a mayor</option>
+                                <option>Precio: mayor a menor</option>
+                                <option>Nombre (A-Z)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="lista-productos">
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/procesador-ryzen-5-5600x.avif" alt="Procesador AMD Ryzen 5 5600X"></div>
+                            <h3>Procesador Ryzen 5 5600X</h3>
+                            <p class="descripcion-producto">6 núcleos y 12 hilos para jugar y trabajar sin retrasos.</p>
+                            <p class="precio">$3,200 <span class="precio-anterior">$3,600</span></p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/tarjeta-madre-msi-b450.jfif" alt="Tarjeta madre MSI B450"></div>
+                            <h3>Tarjeta madre MSI B450</h3>
+                            <p class="descripcion-producto">Socket AM4, compatible con procesadores AMD Ryzen.</p>
+                            <p class="precio">$1,800</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/ram-corsair-vengeance-16gb.jfif" alt="Memoria RAM Corsair Vengeance 16GB"></div>
+                            <h3>RAM Corsair Vengeance 16GB</h3>
+                            <p class="descripcion-producto">Memoria DDR4 de 16 GB para una multitarea fluida.</p>
+                            <p class="precio">$1,200</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/tarjeta-grafica-rtx-3060.jfif" alt="Tarjeta gráfica NVIDIA RTX 3060"></div>
+                            <h3>Tarjeta gráfica RTX 3060</h3>
+                            <p class="descripcion-producto">12 GB de memoria para jugar con trazado de rayos.</p>
+                            <p class="precio">$6,500</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/mouse-logitech-g203.jfif" alt="Mouse gamer Logitech G203"></div>
+                            <h3>Mouse Logitech G203</h3>
+                            <p class="descripcion-producto">Mouse gamer con sensor de 8,000 DPI e iluminación RGB.</p>
+                            <p class="precio">$450</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/audifonos-hyperx-cloud-ii.jfif" alt="Audífonos HyperX Cloud II"></div>
+                            <h3>Audífonos HyperX Cloud II</h3>
+                            <p class="descripcion-producto">Sonido envolvente 7.1 virtual y micrófono con cancelación de ruido.</p>
+                            <p class="precio">$1,100</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/fuente-poder-evga-600w.jfif" alt="Fuente de poder EVGA 600W"></div>
+                            <h3>Fuente de poder EVGA 600W</h3>
+                            <p class="descripcion-producto">Fuente de 600 W con certificación 80 Plus para un consumo eficiente.</p>
+                            <p class="precio">$900</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/ssd-kingston-480gb.jfif" alt="SSD Kingston 480GB"></div>
+                            <h3>SSD Kingston 480GB</h3>
+                            <p class="descripcion-producto">Unidad de estado sólido para encender tu PC en segundos.</p>
+                            <p class="precio">$700</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/gabinete-nzxt-h510.jfif" alt="Gabinete NZXT H510"></div>
+                            <h3>Gabinete NZXT H510</h3>
+                            <p class="descripcion-producto">Gabinete compacto con panel lateral de vidrio templado.</p>
+                            <p class="precio">$1,600</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/teclado-mecanico-redragon.jfif" alt="Teclado mecánico Redragon"></div>
+                            <h3>Teclado mecánico Redragon</h3>
+                            <p class="descripcion-producto">Teclado mecánico con retroiluminación para jugar y escribir.</p>
+                            <p class="precio">$850</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/ventilador-cpu-cooler-master.jfif" alt="Ventilador para CPU Cooler Master"></div>
+                            <h3>Ventilador CPU Cooler Master</h3>
+                            <p class="descripcion-producto">Mantiene tu procesador a baja temperatura, incluso en juegos largos.</p>
+                            <p class="precio">$400</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto"><img src="imagenes/webcam-logitech-c920.jfif" alt="Webcam Logitech C920"></div>
+                            <h3>Webcam Logitech C920</h3>
+                            <p class="descripcion-producto">Video Full HD 1080p para videollamadas y transmisiones.</p>
+                            <p class="precio">$950</p>
+                            <a href="#" class="boton boton-ancho">Agregar al carrito</a>
+                            <a href="#" class="boton boton-secundario boton-ancho">Ver detalles</a>
+                        </article>
+
+                    </div>
+
+                    <!-- Paginacion -->
+                    <div class="paginacion">
+                        <a href="#" class="pagina">&lt;</a>
+                        <a href="#" class="pagina pagina-activa">1</a>
+                        <a href="#" class="pagina">2</a>
+                        <a href="#" class="pagina">3</a>
+                        <a href="#" class="pagina">&gt;</a>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <div class="contenedor">
+            <div class="footer-columnas">
+                <div class="footer-marca">
+                    <a href="index.html" class="logo">
+                        <span class="logo-cuadro"></span>
+                        CoreTech
+                    </a>
+                    <p>La tienda de componentes electrónicos y periféricos de alto rendimiento para gamers, profesionales y estudiantes.</p>
+                </div>
+
+                <div>
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li><a href="mailto:soporte@coretech.com">soporte@coretech.com</a></li>
+                        <li><a href="tel:+525512345678">+52 (55) 1234-5678</a></li>
+                        <li>Lun - Vie: 9:00 - 18:00</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Redes sociales</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter / X</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Información</h3>
+                    <ul>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Políticas de garantía</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="footer-derechos">© 2026 CoreTech E-commerce. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
